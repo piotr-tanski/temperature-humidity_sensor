@@ -14,7 +14,15 @@
 
 ## How to set it up
 
+Step-by-step tutorial on how to set up the HW and SW.
+
 ### Connect the Power Supply
+
+Connect the power supply to the breadboard.
+
+Set up the bus strips of the breadboard's power supply as following:
+- 3.3V for one side of the breadbord,
+- 5V for the opposite one.
 
 ### Connect Raspberry Pi Pico
 
@@ -24,7 +32,19 @@
 
 ### Flash Raspberry Pi Pico with Micropython
 
+Download the latest MicroPython UF2 bootloader from https://micropython.org/download/RPI_PICO/.
+
+Connect your Raspberry Pi Pico to your computer via MicroUSB while pressing the BOOTSEL button on the board. You should see your Raspberry Pi Pico as a mass storage device now.
+
+Drag and drop the UF2 bootloader to the mass storage. The board will disconnect and flash itself automatically.
+
 ### Upload the code
+
+Using Thonny IDE, upload all the files from this repository to the Raspberry Pi Pico.
+
+_Do not change the file names._
+
+Reboot the device. You should see the output on your Lcd screen.
 
 ## License
 
