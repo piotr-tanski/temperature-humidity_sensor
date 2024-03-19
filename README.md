@@ -14,7 +14,17 @@
 
 ## How to set it up
 
-TBD
+### Connect the Power Supply
+
+### Connect Raspberry Pi Pico
+
+### Connect DHT11 sensor
+
+### Connect LCD Display
+
+### Flash Raspberry Pi Pico with Micropython
+
+### Upload the code
 
 ## License
 
