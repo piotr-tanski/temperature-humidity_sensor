@@ -16,6 +16,10 @@
 
 Step-by-step tutorial on how to set up the HW and SW.
 
+First, check out the pico pinout schema:
+
+![](./doc/pico_w_pinout.png)
+
 ### Connect the Power Supply
 
 Connect the power supply to the breadboard.
@@ -24,9 +28,31 @@ Set up the bus strips of the breadboard's power supply as following:
 - 3.3V for one side of the breadbord,
 - 5V for the opposite one.
 
+![](./doc/power_supply_connection.JPG)
+
 ### Connect Raspberry Pi Pico
 
+Place Raspberry Pi Pico on the breadboard and connect it to the power supply.
+
+| Raspberry Pi  | Breadboard  |
+|---------------|-------------|
+| VSYS (Pin 39) |          +  |
+| GND (Pin 38)  |          -  |
+
+![](./doc/pico_connection.JPG)
+
 ### Connect DHT11 sensor
+
+DHT11's `S` pin needs to be connected to an `ADC` pin of Raspberry Pi.
+`+` and `-` needs to be connected to the power supply.
+
+| DHT11         | Connection       |
+|---------------|-------------|
+| - | - (Breadboard)  |
+| + | + (Breadboard) |
+| S | Pin 34 (GP28, ADC2) (Raspberry Pi) |
+
+![](./doc/dht11_connection.JPG)
 
 ### Connect LCD Display
 
