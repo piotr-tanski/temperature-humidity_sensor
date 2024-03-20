@@ -56,6 +56,17 @@ DHT11's `S` pin needs to be connected to an `ADC` pin of Raspberry Pi.
 
 ### Connect LCD Display
 
+LCD display is supposed to be connected to I2C SDA/SCL pinouts and to the power supply.
+
+| LCD         | Connection       |
+|---------------|-------------|
+| GND | - (Breadboard)  |
+| VCC | + (Breadboard) |
+| SDA | Pin 1 (GP0, I2C0 SDA) (Raspberry Pi) |
+| SCL | Pin 2 (GP1, I2C0 SCL) (Raspberry Pi) |
+
+![](./doc/lcd_connection.JPG)
+
 ### Flash Raspberry Pi Pico with Micropython
 
 Download the latest MicroPython UF2 bootloader from https://micropython.org/download/RPI_PICO/.
@@ -71,6 +82,8 @@ Using Thonny IDE, upload all the files from this repository to the Raspberry Pi 
 _Do not change the file names._
 
 Reboot the device. You should see the output on your Lcd screen.
+
+![](./doc/working_setup.JPG)
 
 ## License
 
